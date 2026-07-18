@@ -164,6 +164,15 @@ header{position:sticky;top:0;z-index:100;background:rgba(247,243,236,.94);backdr
 .sns-btn{border:1px solid var(--gold-soft);color:var(--gold-soft);padding:13px 28px;font-size:14.5px;transition:.2s;letter-spacing:.03em}
 .sns-btn:hover{background:var(--gold-soft);color:var(--sumi)}
 
+/* links */
+.link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:860px){.link-grid{grid-template-columns:1fr}}
+.link-card{background:var(--card);border:1px solid var(--line);padding:26px 24px;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.link-card h3{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:17px;border-left:4px solid var(--gold);padding-left:12px;margin-bottom:14px;font-weight:700}
+.link-card ul{list-style:none;font-size:14px}
+.link-card li{margin-bottom:10px;line-height:1.7}
+.link-card .ln-note{display:block;font-size:12px;color:var(--muted)}
+
 /* cta band */
 .cta-band{background:linear-gradient(115deg,#9E0F17,#7C0B12);text-align:center;padding:76px 22px}
 .cta-band h2{color:#fff;margin-bottom:10px}
@@ -194,6 +203,7 @@ footer .links a:hover{color:var(--gold-soft)}
       <a href="#dojo">稽古会</a>
       <a href="#price">料金</a>
       <a href="#faq">FAQ</a>
+      <a href="#links">リンク</a>
       <a class="nav-cta" href="#taiken">体験申込</a>
     </nav>
   </div>
@@ -383,6 +393,46 @@ footer .links a:hover{color:var(--gold-soft)}
   </div>
 </section>
 
+<section id="links">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">LINKS</span>
+      <h2>無想会 関連リンク</h2>
+      <p class="sec-lead">本部・全国の同好会の公式サイト・ブログ・SNSをまとめました。</p>
+    </div>
+    <div class="link-grid">
+      <div class="link-card">
+        <h3>本部・会長</h3>
+        <ul>
+          <li><a href="https://musokai.storeinfo.jp/" target="_blank" rel="noopener">国際沖縄空手道 無想会 本部公式サイト</a></li>
+          <li><a href="https://ameblo.jp/muso-001/" target="_blank" rel="noopener">新垣清会長 公式ブログ「無想会空手」</a></li>
+          <li><a href="https://muso-kai-seminar.jimdofree.com/" target="_blank" rel="noopener">無想会 日本縦断セミナー</a></li>
+          <li><a href="https://www.youtube.com/channel/UChSBefhRK_FVB2dlZIdm7cQ" target="_blank" rel="noopener">無想会 公式YouTubeチャンネル</a><span class="ln-note">会長による技術解説動画</span></li>
+          <li><a href="https://www.facebook.com/musokai.karate" target="_blank" rel="noopener">会長 Facebook（Kiyoshi Arakaki）</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h3>全国・海外の同好会</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/musokai_kanto/" target="_blank" rel="noopener">関東同好会 Instagram</a></li>
+          <li><a href="https://www.instagram.com/musoukai_osaka/" target="_blank" rel="noopener">大阪同好会 Instagram</a></li>
+          <li><a href="https://www.instagram.com/musou_shimane/" target="_blank" rel="noopener">島根同好会 Instagram</a></li>
+          <li><a href="https://msokaihiroshima.hatenablog.com/" target="_blank" rel="noopener">広島・成趣館（稽古会ブログ）</a></li>
+          <li><a href="https://musokaiusa.wixstudio.com/my-site-1" target="_blank" rel="noopener">アメリカ本部道場（ソルトレイクシティ）</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h3>沖縄同好会のSNS</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/musokai.okinawa/" target="_blank" rel="noopener">Instagram @musokai.okinawa</a><span class="ln-note">漫画連載を毎日更新</span></li>
+          <li><a href="https://www.tiktok.com/@musokai_okinawa" target="_blank" rel="noopener">TikTok @musokai_okinawa</a></li>
+          <li><a href="https://www.youtube.com/@musokai_okinawa" target="_blank" rel="noopener">YouTube 無想会空手 沖縄同好会</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="cta-band" id="taiken">
   <span class="sec-label">CONTACT</span>
   <h2><span class="nw">体験稽古・見学の</span><span class="nw">お申し込み</span></h2>
@@ -395,9 +445,11 @@ footer .links a:hover{color:var(--gold-soft)}
   <div class="fbrand">沖縄空手道無想会 沖縄同好会</div>
   <div>国際沖縄空手道無想会（会長・新垣清）沖縄支部組織</div>
   <div class="links">
+    <a href="https://musokai.storeinfo.jp/" target="_blank" rel="noopener">本部公式サイト</a>
     <a href="https://ameblo.jp/muso-001/" target="_blank" rel="noopener">会長公式ブログ</a>
     <a href="https://muso-kai-seminar.jimdofree.com/" target="_blank" rel="noopener">日本縦断セミナー</a>
     <a href="https://www.instagram.com/musokai.okinawa/" target="_blank" rel="noopener">Instagram</a>
+    <a href="#links">関連リンク一覧</a>
   </div>
   <div>&copy; 2026 Muso-kai Okinawa. All Rights Reserved.</div>
 </footer>
@@ -429,6 +481,7 @@ footer .links a:hover{color:var(--gold-soft)}
   "sameAs":[
     "https://www.instagram.com/musokai.okinawa/",
     "https://www.tiktok.com/@musokai_okinawa",
+    "https://www.youtube.com/@musokai_okinawa",
     "https://ameblo.jp/muso-001/"
   ]
 }
