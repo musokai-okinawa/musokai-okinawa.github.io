@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- English version of index.html. When index.html is updated, update this page too. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#F7F3EC">
+<title>International Okinawa Karate-do Muso-kai Okinawa Club | Learn Traditional Okinawan Karate in Okinawa</title>
+<meta name="description" content="Official website of the International Okinawa Karate-do Muso-kai Okinawa Club. Learn the body mechanics of traditional Okinawan karate, based on the books of founder Kiyoshi Arakaki, in Naha, Okinawa City, and on Iriomote Island. Trial class (observation included) ¥1,000, adults only.">
+<meta property="og:title" content="International Okinawa Karate-do Muso-kai Okinawa Club | Learn Traditional Okinawan Karate in Okinawa">
+<meta property="og:description" content="Learn the body mechanics of traditional Okinawan karate, based on the books of founder Kiyoshi Arakaki, in Naha, Okinawa City, and on Iriomote Island. Trial class (observation included) ¥1,000, adults only.">
+<meta property="og:image" content="https://musokai-okinawa.github.io/assets/hero_demo.jpg">
+<meta property="og:url" content="https://musokai-okinawa.github.io/en.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://musokai-okinawa.github.io/en.html">
+<link rel="alternate" hreflang="ja" href="https://musokai-okinawa.github.io/">
+<link rel="alternate" hreflang="en" href="https://musokai-okinawa.github.io/en.html">
+<link rel="alternate" hreflang="x-default" href="https://musokai-okinawa.github.io/">
+<link rel="icon" type="image/png" href="assets/musokai_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F7F3EC; --card:#FFFFFF; --sumi:#201D19; --sumi2:#2A2621;
+  --ink:#26221D; --ink-soft:#5A5348; --muted:#8B8272;
+  --line:#E4DCCC; --line-dark:#3B362E;
+  --red:#B5121B; --red-hover:#9C0F17; --gold:#96762F; --gold-soft:#C4A24E;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;background:var(--paper);color:var(--ink);line-height:1.95;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--red);text-decoration:none}
+.serif{font-family:"Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+section{padding:92px 0}
+@media(max-width:760px){section{padding:64px 0}}
+
+.sec-head{margin-bottom:44px}
+.sec-label{color:var(--red);font-size:12px;letter-spacing:.34em;font-weight:700;display:block;margin-bottom:10px}
+h2{font-family:"Shippori Mincho","Noto Serif JP",serif;font-size:clamp(26px,4vw,36px);font-weight:700;color:var(--ink);letter-spacing:.06em;line-height:1.5}
+.sec-lead{margin-top:14px;color:var(--ink-soft);font-size:15px;max-width:640px}
+
+/* header */
+header{position:sticky;top:0;z-index:100;background:rgba(247,243,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;font-family:"Shippori Mincho",serif;color:var(--ink);font-weight:700;font-size:16px;letter-spacing:.05em;line-height:1.3}
+.brand img{height:40px;width:40px;border-radius:50%;flex:none}
+.brand-txt{display:block}
+.brand span{color:var(--gold);font-size:10.5px;display:block;letter-spacing:.18em;font-family:"Noto Sans JP",sans-serif;font-weight:500}
+@media(max-width:520px){
+  .brand{font-size:14px;gap:9px}
+  .brand img{height:34px;width:34px}
+  .brand span{font-size:9px;letter-spacing:.06em;line-height:1.35}
+}
+.navlinks{display:flex;align-items:center;gap:16px;font-size:13.5px}
+.navlinks a{color:var(--ink-soft);letter-spacing:.04em}
+.navlinks a:hover{color:var(--red)}
+.nav-cta{background:var(--red);color:#fff!important;padding:9px 20px;border-radius:3px;font-weight:700}
+.nav-cta:hover{background:var(--red-hover)}
+.lang-sw{border:1px solid var(--line);border-radius:3px;padding:5px 9px;font-size:12px;letter-spacing:.08em}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:10px;margin-right:-10px}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.25s}
+@media(max-width:860px){
+  .menu-btn{display:block}
+  .navlinks{display:none;position:absolute;top:64px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 0 16px}
+  .navlinks.open{display:flex}
+  .navlinks a{padding:12px 22px;width:100%;text-align:left;font-size:15px}
+  .navlinks .lang-sw{border:none;border-radius:0}
+  .navlinks .nav-cta{margin:10px 22px 0;width:calc(100% - 44px);text-align:center;border-radius:4px}
+  body.menu-open .menu-btn span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  body.menu-open .menu-btn span:nth-child(2){opacity:0}
+  body.menu-open .menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:88px 0 96px;border-bottom:1px solid var(--line)}
+.hero-deco{position:absolute;top:24px;right:6px;writing-mode:vertical-rl;font-family:"Shippori Mincho",serif;font-size:clamp(110px,17vw,210px);font-weight:700;color:rgba(38,34,29,.045);line-height:1;letter-spacing:.08em;pointer-events:none;user-select:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:48px}.hero{padding:56px 0 72px}}
+.hero-kicker{color:var(--gold);letter-spacing:.3em;font-size:12px;font-weight:700;margin-bottom:20px}
+.hero h1{font-family:"Shippori Mincho",serif;font-size:clamp(28px,3.3vw,40px);line-height:1.6;font-weight:800;letter-spacing:.03em;margin-bottom:24px;color:var(--ink)}
+.nw{white-space:nowrap}
+@media(max-width:860px){.hero h1{font-size:clamp(22px,6.9vw,36px)}}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero p{max-width:540px;color:var(--ink-soft);margin-bottom:34px;font-size:15.5px}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:16.5px;padding:16px 36px;border-radius:3px;box-shadow:0 8px 24px rgba(181,18,27,.22);transition:.2s}
+.btn:hover{transform:translateY(-2px);background:var(--red-hover)}
+.btn-sub{display:inline-block;margin-left:16px;color:var(--ink-soft);font-size:14px;border-bottom:1px solid var(--muted);padding-bottom:2px}
+.btn-sub:hover{color:var(--red);border-color:var(--red)}
+.hero-note{margin-top:16px;font-size:12.5px;color:var(--muted)}
+@media(max-width:480px){
+  .hero .btn{display:block;text-align:center;font-size:15px;padding:15px 14px}
+  .btn-sub{margin-left:0;margin-top:16px}
+}
+.hero-photo{position:relative;margin-right:14px}
+.hero-photo::before{content:"";position:absolute;top:16px;left:16px;right:-14px;bottom:-14px;border:1px solid var(--gold-soft);z-index:0}
+.hero-photo img{position:relative;z-index:1;box-shadow:0 18px 44px rgba(38,34,29,.18)}
+@media(max-width:860px){.hero-photo{margin:0 14px 0 0}}
+
+/* features */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:820px){.feat-grid{grid-template-columns:1fr}}
+.feat{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--red);padding:34px 28px;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.feat .num{font-family:"Shippori Mincho",serif;color:var(--gold);font-size:15px;letter-spacing:.22em;margin-bottom:12px;font-weight:600}
+.feat h3{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:20px;margin-bottom:14px;line-height:1.5;font-weight:700}
+.feat p{font-size:14.5px;color:var(--ink-soft)}
+
+/* philosophy band */
+.philo{background:var(--sumi);color:#EDE8DE;text-align:center;padding:84px 22px;border:none}
+.philo .p-label{color:var(--gold-soft);font-size:12px;letter-spacing:.34em;font-weight:700;display:block;margin-bottom:22px}
+.philo blockquote{font-family:"Shippori Mincho",serif;font-size:clamp(22px,3.6vw,32px);line-height:2;font-weight:700;letter-spacing:.08em;border:none;max-width:760px;margin:0 auto 24px}
+.philo blockquote em{font-style:normal;color:var(--gold-soft)}
+.philo p{max-width:620px;margin:0 auto;font-size:14.5px;color:#BDB5A5}
+
+/* kaicho */
+.kaicho-grid{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start}
+@media(max-width:820px){.kaicho-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto}}
+.kaicho-photo{position:relative;margin:0 14px 14px 0}
+.kaicho-photo::before{content:"";position:absolute;top:14px;left:14px;right:-14px;bottom:-14px;border:1px solid var(--gold-soft);z-index:0}
+.kaicho-photo img{position:relative;z-index:1;box-shadow:0 14px 36px rgba(38,34,29,.14)}
+.kaicho-name{margin-top:26px;text-align:center}
+.kaicho-name b{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:20px;letter-spacing:.14em}
+.kaicho-name span{display:block;color:var(--muted);font-size:12.5px;margin-top:4px;letter-spacing:.06em}
+.kaicho-body p{margin-bottom:18px;font-size:15px;color:var(--ink-soft)}
+.books{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);padding:20px 22px;font-size:13.5px;color:var(--ink-soft);margin-top:24px;line-height:2}
+.books b{color:var(--gold);font-family:"Shippori Mincho",serif;letter-spacing:.08em}
+
+/* about philosophy / symbol */
+.about-philo{display:grid;grid-template-columns:180px 1fr;gap:44px;align-items:start;margin-top:58px;padding-top:46px;border-top:1px solid var(--line)}
+@media(max-width:760px){.about-philo{grid-template-columns:1fr;gap:24px;margin-top:44px;padding-top:36px}}
+.ap-logo{display:flex;justify-content:center}
+.ap-logo img{width:150px;height:150px}
+@media(max-width:760px){.ap-logo img{width:128px;height:128px}}
+.ap-body h3{font-family:"Shippori Mincho",serif;font-size:22px;color:var(--ink);margin-bottom:20px;font-weight:700;letter-spacing:.05em;line-height:1.5}
+.ap-body p{font-size:15px;color:var(--ink-soft);margin-bottom:16px}
+.ap-body p:last-child{margin-bottom:0}
+.ap-body p b{color:var(--ink);font-weight:700}
+.ap-quote{display:inline-block;margin-top:4px;color:var(--red);font-weight:700;font-size:18px;letter-spacing:.05em}
+
+/* ayumi timeline */
+.timeline{max-width:820px;margin:0 auto;position:relative}
+.tl-item{position:relative;padding:0 0 36px 132px;min-height:34px}
+.tl-item::before{content:"";position:absolute;left:97px;top:7px;bottom:-7px;width:2px;background:rgba(181,18,27,.28)}
+.tl-item:last-child{padding-bottom:0}
+.tl-item:last-child::before{display:none}
+.tl-item::after{content:"";position:absolute;left:91px;top:5px;width:13px;height:13px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px var(--paper)}
+.tl-era{position:absolute;left:0;top:3px;width:80px;text-align:right;font-family:"Shippori Mincho",serif;color:var(--red);font-weight:700;font-size:15px;letter-spacing:.02em;line-height:1.45}
+.tl-body h3{font-family:"Shippori Mincho",serif;font-size:18px;color:var(--ink);margin-bottom:10px;font-weight:700;letter-spacing:.03em;line-height:1.5}
+.tl-body p{font-size:14.5px;color:var(--ink-soft)}
+@media(max-width:600px){
+  .tl-item{padding:0 0 30px 26px}
+  .tl-item::before{left:5px}
+  .tl-item::after{left:0}
+  .tl-era{position:static;width:auto;text-align:left;display:block;margin-bottom:6px;font-size:14px}
+}
+
+/* dojo */
+.dojo-sec{background:#F1ECE1;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dojo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:860px){.dojo-grid{grid-template-columns:1fr}}
+.dojo{background:var(--card);border:1px solid var(--line);padding:30px 26px;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.dojo h3{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:20px;border-left:4px solid var(--red);padding-left:14px;margin-bottom:18px;font-weight:700}
+.dojo dl{font-size:14.5px}
+.dojo dt{color:var(--gold);font-size:12px;letter-spacing:.16em;margin-top:14px;font-weight:700}
+.dojo dd{color:var(--ink-soft)}
+.map-link{display:inline-block;margin-top:16px;font-size:12.5px;color:var(--red);border-bottom:1px solid rgba(181,18,27,.4);padding-bottom:1px}
+.keiko-photos{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+@media(max-width:760px){.keiko-photos{grid-template-columns:1fr}}
+.keiko-photos figure{background:var(--card);border:1px solid var(--line);overflow:hidden;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.keiko-photos figcaption{font-size:12.5px;color:var(--muted);padding:12px 16px}
+
+/* price */
+.price-table{width:100%;border-collapse:collapse;max-width:720px;margin:0 auto;font-size:15px;background:var(--card)}
+.price-table th,.price-table td{border:1px solid var(--line);padding:15px 20px;text-align:left}
+.price-table th{background:#F1ECE1;color:var(--ink);font-weight:600;width:46%}
+.price-table td{color:var(--ink-soft)}
+.price-table .em{color:var(--red);font-weight:700;font-size:16px}
+.price-note{max-width:720px;margin:14px auto 0;font-size:12.5px;color:var(--muted)}
+
+/* flow */
+.flow-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
+@media(max-width:860px){.flow-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.flow-grid{grid-template-columns:1fr}}
+.step{background:var(--card);border:1px solid var(--line);padding:26px 22px;position:relative;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.step::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:"Shippori Mincho",serif;color:var(--red);font-weight:800;font-size:24px;letter-spacing:.05em;display:block;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:12px}
+.step h3{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:16.5px;margin-bottom:8px;font-weight:700}
+.step p{font-size:13.5px;color:var(--ink-soft)}
+
+/* faq */
+.faq{max-width:780px;margin:0 auto}
+.faq details{background:var(--card);border:1px solid var(--line);margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:18px 22px;color:var(--ink);font-weight:600;font-size:15px;list-style:none;position:relative;padding-right:48px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";position:absolute;right:20px;top:16px;color:var(--red);font-size:17px}
+.faq details[open] summary::after{content:"−"}
+.faq .a{padding:0 22px 20px;font-size:14.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:14px;margin:0 0}
+
+/* manga / sns */
+.manga{background:var(--sumi);text-align:center}
+.manga .sec-label{color:var(--gold-soft)}
+.manga h2{color:#EDE8DE}
+.manga p{max-width:640px;margin:18px auto 30px;font-size:15px;color:#BDB5A5}
+.sns-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.sns-btn{border:1px solid var(--gold-soft);color:var(--gold-soft);padding:13px 28px;font-size:14.5px;transition:.2s;letter-spacing:.03em}
+.sns-btn:hover{background:var(--gold-soft);color:var(--sumi)}
+
+/* links */
+.link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:860px){.link-grid{grid-template-columns:1fr}}
+.link-card{background:var(--card);border:1px solid var(--line);padding:26px 24px;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.link-card h3{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:17px;border-left:4px solid var(--gold);padding-left:12px;margin-bottom:14px;font-weight:700}
+.link-card ul{list-style:none;font-size:14px}
+.link-card li{margin-bottom:10px;line-height:1.7}
+.link-card .ln-note{display:block;font-size:12px;color:var(--muted)}
+
+/* cta band */
+.cta-band{background:linear-gradient(115deg,#9E0F17,#7C0B12);text-align:center;padding:76px 22px}
+.cta-band h2{color:#fff;margin-bottom:10px}
+.cta-band .sec-label{color:#E8C9CB}
+.cta-band p{color:#F2DCDD;margin-bottom:30px;font-size:15px}
+.cta-band .btn{background:#fff;color:#9E0F17;box-shadow:0 8px 26px rgba(0,0,0,.28)}
+.cta-band .btn:hover{background:var(--paper)}
+.cta-band .mail{display:block;margin-top:20px;color:#F2DCDD;font-size:13.5px}
+.cta-band .mail a{color:#fff;text-decoration:underline}
+
+/* footer */
+footer{background:var(--sumi);padding:48px 22px 60px;text-align:center;font-size:12.5px;color:#8F887A;border-top:1px solid var(--line-dark)}
+footer .fbrand{font-family:"Shippori Mincho",serif;color:var(--gold-soft);letter-spacing:.18em;font-size:15px;margin-bottom:10px}
+footer .links{margin:14px 0;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+footer .links a{color:#BDB5A5}
+footer .links a:hover{color:var(--gold-soft)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand"><img src="assets/musokai_logo.png" alt="Muso-kai logo"><span class="brand-txt">International Okinawa Karate-do Muso-kai<span>OKINAWA CLUB</span></span></div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navlinks" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#kaicho">Founder</a>
+      <a href="#ayumi">History</a>
+      <a href="#dojo">Dojo</a>
+      <a href="#price">Fees</a>
+      <a href="#faq">FAQ</a>
+      <a href="#links">Links</a>
+      <a class="lang-sw" href="index.html" lang="ja">日本語</a>
+      <a class="nav-cta" href="#taiken">Trial Class</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-deco serif" aria-hidden="true">無想</div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="hero-kicker">OKINAWA KARATE-DO MUSO-KAI</div>
+      <h1>Not strength — <em>speed</em>.<br>Not muscle — <span class="nw"><em>body mechanics</em>.</span></h1>
+      <p>Learn the body mechanics of traditional Okinawan karate — lost in the age of sport karate — here in Okinawa, where karate was born. Systematic training based on the books of Kiyoshi Arakaki, founder and president of the International Okinawa Karate-do Muso-kai, for beginners and experienced practitioners alike.</p>
+      <a class="btn" href="#taiken"><span class="nw">Join a Trial Class</span> <span class="nw">(¥1,000)</span></a>
+      <a class="btn-sub" href="#dojo">See Training Schedule</a>
+      <div class="hero-note">Adults (junior-high age and up) / Observation welcome / No experience required</div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/hero_demo.jpg" alt="Technical demonstration at a Muso-kai seminar">
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">ABOUT</span>
+      <h2>What Makes Muso-kai Karate Different</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="num">I</div>
+        <h3>Karate with Books</h3>
+        <p>Our training is grounded in founder Kiyoshi Arakaki's book series <i>Okinawa Budō Karate no Gokui</i> (The Essence of Okinawan Budo Karate). Rather than relying on intuition and oral tradition alone, you learn a technical system explained through anatomy and physics — through books and training together.</p>
+      </div>
+      <div class="feat">
+        <div class="num">II</div>
+        <h3>Technique, Not Muscle</h3>
+        <p>Traditional Okinawan karate generates energy from the drop of gravity and the use of the hips. Because progress does not depend on age or build, many of our members begin in their 40s and 50s.</p>
+      </div>
+      <div class="feat">
+        <div class="num">III</div>
+        <h3>A Budo Without Tournaments</h3>
+        <p>There are no competitive matches. Instead of trading points, we work step by step to absorb the original combat principles preserved in kata such as Naifanchi and Pinan.</p>
+      </div>
+    </div>
+
+    <div class="about-philo">
+      <div class="ap-logo"><img src="assets/musokai_logo.png" alt="Muso-kai symbol"></div>
+      <div class="ap-body">
+        <h3>The Meaning of Our Name and Symbol</h3>
+        <p><b>The name "Muso-kai"</b> comes from <i>munen-musō</i>, a state of mind free of all distracting thoughts. It is also drawn from the words of Master Arakaki — <span class="ap-quote serif">"Those who contemplate Nothingness bring forth Something for the world."</span></p>
+        <p><b>Our symbol</b> places the <i>seiken</i> — the fore-fist of karate — inside the <i>mitsudomoe</i>, the crest of the Shō royal family of the Ryukyu Kingdom and the emblem of the kingdom's flag. The royal crest, called the <i>Hidari Gomon</i>, swirls to the left; Muso-kai's symbol turns to the right out of respect for the Shō family and the Ryukyu Kingdom. It carries a wish: that karate, born in Okinawa and now spread across the world, will contribute to the peace and prosperity of the world — and that this role will, in time, return as a contribution to Okinawa itself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="philo">
+  <span class="p-label">PHILOSOPHY</span>
+  <blockquote>Not karate as a sport,<br>but karate as a <em>martial art</em>.</blockquote>
+  <p>No matches, no point-scoring. We unlock, one by one, the body mechanics our predecessors preserved within the kata, and practice karate as a budo you can continue for life.</p>
+</section>
+
+<section id="kaicho">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">FOUNDER</span>
+      <h2>About the Founder</h2>
+    </div>
+    <div class="kaicho-grid">
+      <div>
+        <div class="kaicho-photo"><img src="assets/kaicho_portrait_web.jpg" alt="Kiyoshi Arakaki, President of the International Okinawa Karate-do Muso-kai"></div>
+        <div class="kaicho-name"><b>Kiyoshi Arakaki</b><span>President, International Okinawa Karate-do Muso-kai</span></div>
+      </div>
+      <div class="kaicho-body">
+        <p>Born in 1954 in Naha, Okinawa — the birthplace of karate — as the eldest son of a medical family that ran a surgical hospital. With Shinei Kyan, a 9th-dan master of Matsubayashi-ryu, among his mother's relatives, he grew up close to karate from early childhood. He went on to research and systematize the body mechanics of traditional Okinawan karate — lost as sport karate spread around the world — from the standpoint of anatomy and physics, and founded the International Okinawa Karate-do Muso-kai.</p>
+        <p>His books, the <i>Okinawa Budō Karate no Gokui</i> series, made a major impact on the karate world, and he holds seminars in Japan and overseas. He continues to teach in person at study groups across Japan, including Okinawa.</p>
+        <div class="books">
+          <b>Selected Books</b><br>
+          <i>Okinawa Budō Karate no Gokui</i> (The Essence of Okinawan Budo Karate) series, 4 volumes / <i>"Heian no Kata" no Kenshō</i> (A Study of the Pinan Kata) / <i>Ryūkyū Ōkoku Jidai no Bu no Kenshō</i> (A Study of the Martial Arts of the Ryukyu Kingdom Era) (Hara Shobo), and others<br>
+          <b>Official Blog</b>: <a href="https://ameblo.jp/muso-001/" target="_blank" rel="noopener">Kiyoshi Arakaki's Muso-kai Blog (Japanese)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ayumi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">HISTORY</span>
+      <h2>The Story of Muso-kai</h2>
+      <p class="sec-lead">How one karateka arrived at the lost principles of the old art — the journey of founder Kiyoshi Arakaki.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-era">1954</span>
+        <div class="tl-body">
+          <h3>Born in Naha, Okinawa</h3>
+          <p>Born in Naha, the eldest son of a doctor of medicine who ran a surgical hospital. Among his mother's relatives was Shinei Kyan, a 9th-dan master of Matsubayashi-ryu who also served in Japan's House of Councillors, and he grew up with a longing for karate from an early age.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">Youth</span>
+        <div class="tl-body">
+          <h3>Training in Shuri-te</h3>
+          <p>In junior high school he helped found a karate club — still a rarity at the time — and received thorough instruction in the kata of Shuri-te, built on Naifanchi, from Tenei Taba, an early student of Master Shoshin Nagamine. During his years at Naha High School, he entered Master Nagamine's dojo. In an era when "one person, one art" traditions still survived across Okinawa, he sought out many of the so-called hidden bushi.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">1980</span>
+        <div class="tl-body">
+          <h3>Founding Muso-kai in Utah, USA</h3>
+          <p>After moving to the United States and coaching a university karate club, he opened the Muso-kai dojo in Utah in 1980.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">1980s</span>
+        <div class="tl-body">
+          <h3>Success in Competition</h3>
+          <p>He and his students placed highly in international full-contact and kōshiki (protective-gear) karate tournaments, and he came to host Utah's largest national tournament twice a year. In 1987 he was appointed president of the U.S. Koshiki Karate Federation and awarded 6th dan (he now holds 7th dan). The influence of Joko Ninomiya, founder of Enshin Kaikan, also dates from this period.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">Turning<br>point</span>
+        <div class="tl-body">
+          <h3>Calcutta, India</h3>
+          <p>As a volunteer at Mother Teresa's Home for the Dying in Calcutta, he cared for many people in their final hours. Born into a family devoted to saving lives, yet devoted himself to an art whose ultimate end is to defeat another — facing that contradiction, he arrived at the principle: "Those who contemplate Nothingness bring forth Something for the world."</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">5 years of<br>retraining</span>
+        <div class="tl-body">
+          <h3>Starting Over from the Beginning</h3>
+          <p>"I could perform the kata, but I had not understood the <i>ti</i> — the art itself as a martial art." Confronting this fact, he halted all of his flourishing tournament and teaching activities and retrained from scratch in the old kata, beginning with Naifanchi. It was a genuinely difficult period, marked by financial hardship.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">5 more<br>years</span>
+        <div class="tl-body">
+          <h3>Rebuilding the Teaching System</h3>
+          <p>Okinawan karate had been handed down one-to-one, from master to student. He spent roughly five more years establishing a way to teach it to many students at once. The result is Muso-kai's present system, in which everything from basics to kumite is unified by the principles of Naifanchi.</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-era">To the<br>world</span>
+        <div class="tl-body">
+          <h3>Publication of <i>Okinawa Budō Karate no Gokui</i></h3>
+          <p>The body mechanics he regained through retraining were published as the <i>Okinawa Budō Karate no Gokui</i> series, which came to be known as the "Arakaki Theory" and has been translated into English, Spanish, and Italian. In <i>Okinawa Karate-dō no Rekishi</i> (The History of Okinawan Karate-do, 2011, Hara Shobo) and <i>"Heian no Kata" no Kenshō</i> (A Study of the Pinan Kata, 2013, Hara Shobo), he shed light on the karate of the Ryukyu Kingdom era and on the Pinan kata. Today he holds seminars around the world, and study groups have been founded across Japan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dojo-sec" id="dojo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">DOJO</span>
+      <h2>Training Groups in Okinawa</h2>
+      <p class="sec-lead">We train at three locations in Okinawa Prefecture — join the one nearest you. Every group leader is a direct student who has trained under Grandmaster Kiyoshi Arakaki in person for more than ten years.</p>
+    </div>
+    <div class="dojo-grid">
+      <div class="dojo">
+        <h3>Naha</h3>
+        <dl>
+          <dt>SCHEDULE</dt><dd>Every Sunday 10:30–13:30</dd>
+          <dt>LOCATION</dt><dd>Okinawa Karate Kaikan, training room<br>(sometimes held at the Okinawa Prefectural Budokan)<br>854-1 Tomigusuku, Tomigusuku City</dd>
+          <dt>MONTHLY FEE</dt><dd>¥5,000</dd>
+          <dt>LEADER</dt><dd>Matayoshi (1st dan)</dd>
+        </dl>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B2%96%E7%B8%84%E7%A9%BA%E6%89%8B%E4%BC%9A%E9%A4%A8" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+      <div class="dojo">
+        <h3>Okinawa City</h3>
+        <dl>
+          <dt>SCHEDULE</dt><dd>Every Wednesday 18:00–20:00</dd>
+          <dt>LOCATION</dt><dd>Okinawa City Fukushi Bunka Plaza, 2F Training Room 2<br>7-35-1 Takahara, Okinawa City</dd>
+          <dt>MONTHLY FEE</dt><dd>¥5,000</dd>
+          <dt>LEADER</dt><dd>Hamaguchi (2nd dan)</dd>
+        </dl>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B2%96%E7%B8%84%E5%B8%82%E7%A6%8F%E7%A5%89%E6%96%87%E5%8C%96%E3%83%97%E3%83%A9%E3%82%B6" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+      <div class="dojo">
+        <h3>Iriomote</h3>
+        <dl>
+          <dt>SCHEDULE</dt><dd>Irregular (please contact us)</dd>
+          <dt>LOCATION</dt><dd>Nakano Churayuna-kan community hall, Uehara district, Iriomote Island<br>893 Uehara, Taketomi Town, Yaeyama District</dd>
+          <dt>MONTHLY FEE</dt><dd>Please contact us</dd>
+          <dt>LEADER</dt><dd>Takaichi (3rd dan)</dd>
+        </dl>
+        <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E9%87%8E%E3%81%A1%E3%82%85%E3%82%89%E3%82%86%E3%81%AA%E9%A4%A8" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="keiko-photos">
+      <figure><img src="assets/keiko_setsumei.jpg" alt="Technical instruction at a seminar"><figcaption>Technical instruction at a seminar — theory and demonstration together.</figcaption></figure>
+      <figure><img src="assets/keiko_sotai.jpg" alt="Partner training"><figcaption>Partner training, adjusted to each member's age and experience.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center">
+      <span class="sec-label">PRICE</span>
+      <h2>Fees</h2>
+    </div>
+    <table class="price-table">
+      <tr><th>Trial class (first visit only, observation included)</th><td class="em">¥1,000</td></tr>
+      <tr><th>Drop-in training (from your 2nd visit, without joining)</th><td>¥3,000 / session</td></tr>
+      <tr><th>Enrollment fee</th><td>¥10,000</td></tr>
+      <tr><th>Monthly fee (Naha)</th><td>¥5,000</td></tr>
+      <tr><th>Monthly fee (Okinawa City)</th><td>¥5,000</td></tr>
+      <tr><th>Monthly fee (Iriomote)</th><td>Please contact us</td></tr>
+      <tr><th>Annual fee</th><td>¥10,000 (paid every April, at the start of the fiscal year)</td></tr>
+    </table>
+    <p class="price-note">All prices include tax.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">FLOW</span>
+      <h2>Your First Visit, Step by Step</h2>
+    </div>
+    <div class="flow-grid">
+      <div class="step"><h3>Apply via the Form</h3><p>Send us your preferred training group and date using the application form below.</p></div>
+      <div class="step"><h3>We Confirm the Details</h3><p>Our staff will e-mail you your visit date and what to bring.</p></div>
+      <div class="step"><h3>Join the Trial Class</h3><p>Comfortable clothes and a drink are all you need. Bring your gi if you have one.</p></div>
+      <div class="step"><h3>Enroll (Only If You Wish)</h3><p>No pressure to join after the trial — take your time to decide.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center">
+      <span class="sec-label">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do I need any athletic experience?</summary><div class="a">No. Muso-kai training centers on learning body mechanics that do not rely on strength or explosive power, so people with no athletic background — or little confidence in their fitness — can start comfortably.</div></details>
+      <details><summary>Is there an age limit?</summary><div class="a">We have an adult program only, open from junior-high age and up (there are no children's classes). Many members begin in their 40s or 50s, and there is no upper age limit.</div></details>
+      <details><summary>I train in another style. Can I join?</summary><div class="a">You are very welcome. Practitioners of sport karate and other martial arts are often the most surprised by the answers to the question, "Why does the kata move this way?" You may also keep training in another style alongside Muso-kai.</div></details>
+      <details><summary>Can I just observe?</summary><div class="a">Yes, observation is available (first visit only, ¥1,000). Please choose the observation option in the application form.</div></details>
+      <details><summary>What should I bring to my first class?</summary><div class="a">Just comfortable clothes (your gi, if you have one) and a drink.</div></details>
+      <details><summary>Are there tournaments?</summary><div class="a">Muso-kai holds no competitive matches. Through kata and body mechanics, we practice karate as a budo you can continue for life.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="manga">
+  <div class="wrap">
+    <span class="sec-label">SNS</span>
+    <h2>Start with Our Manga</h2>
+    <p>Muso-kai's techniques are introduced one episode a day in our Instagram manga series based on <i>Okinawa Budō Karate no Gokui</i> (in Japanese). Get a feel for our training and way of thinking on social media first.</p>
+    <div class="sns-row">
+      <a class="sns-btn" href="https://www.instagram.com/musokai.okinawa/" target="_blank" rel="noopener">Instagram @musokai.okinawa</a>
+      <a class="sns-btn" href="https://www.tiktok.com/@musokai_okinawa" target="_blank" rel="noopener">TikTok @musokai_okinawa</a>
+      <a class="sns-btn" href="https://ameblo.jp/muso-001/" target="_blank" rel="noopener">Founder's Official Blog</a>
+    </div>
+  </div>
+</section>
+
+<section id="links">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-label">LINKS</span>
+      <h2>Muso-kai Links</h2>
+      <p class="sec-lead">Official sites, blogs, and social media of the headquarters and of study groups across Japan and overseas.</p>
+    </div>
+    <div class="link-grid">
+      <div class="link-card">
+        <h3>Headquarters &amp; Founder</h3>
+        <ul>
+          <li><a href="https://ameblo.jp/muso-001/" target="_blank" rel="noopener">Kiyoshi Arakaki's Official Blog "Muso-kai Karate" (Japanese)</a></li>
+          <li><a href="https://muso-kai-seminar.jimdofree.com/" target="_blank" rel="noopener">Muso-kai Japan Seminar Tour (Japanese)</a></li>
+          <li><a href="https://www.youtube.com/channel/UChSBefhRK_FVB2dlZIdm7cQ" target="_blank" rel="noopener">Official Muso-kai YouTube Channel</a><span class="ln-note">Technical videos by the founder</span></li>
+          <li><a href="https://www.facebook.com/musokai.karate" target="_blank" rel="noopener">Founder's Facebook (Kiyoshi Arakaki)</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h3>Study Groups in Japan &amp; Overseas</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/musokai_kanto/" target="_blank" rel="noopener">Kanto Club — Instagram</a></li>
+          <li><a href="https://www.instagram.com/musoukai_osaka/" target="_blank" rel="noopener">Osaka Club — Instagram</a></li>
+          <li><a href="https://musoukai-shimane.jimdofree.com/" target="_blank" rel="noopener">Shimane Club — Official Site (Japanese)</a></li>
+          <li><a href="https://www.instagram.com/musou_shimane/" target="_blank" rel="noopener">Shimane Club — Instagram</a></li>
+          <li><a href="https://www.facebook.com/wu.xiang.hui.dao.gen.xian.tong.hao.hui/" target="_blank" rel="noopener">Shimane Club — Facebook</a></li>
+          <li><a href="https://msokaihiroshima.hatenablog.com/" target="_blank" rel="noopener">Higashi-Hiroshima Club — Blog (Japanese)</a></li>
+          <li><a href="https://musokaiusa.wixstudio.com/my-site-1" target="_blank" rel="noopener">U.S. Headquarters Dojo (Salt Lake City)</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h3>Okinawa Club — Social Media</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/musokai.okinawa/" target="_blank" rel="noopener">Instagram @musokai.okinawa</a><span class="ln-note">Daily manga series (Japanese)</span></li>
+          <li><a href="https://www.tiktok.com/@musokai_okinawa" target="_blank" rel="noopener">TikTok @musokai_okinawa</a></li>
+          <li><a href="https://www.youtube.com/@musokai_okinawa" target="_blank" rel="noopener">YouTube — Muso-kai Karate Okinawa Club</a></li>
+          <li><a href="https://x.com/musokai_okinawa" target="_blank" rel="noopener">X (Twitter) @musokai_okinawa</a></li>
+          <li><a href="https://seisan13.hateblo.jp/" target="_blank" rel="noopener">Okinawa Club Blog (Japanese)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band" id="taiken">
+  <span class="sec-label">CONTACT</span>
+  <h2><span class="nw">Apply for a Trial Class</span> <span class="nw">or Observation</span></h2>
+  <p>First visit (observation included): ¥1,000. Feel free to get in touch.</p>
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdq0a9PKZtuaIJMMnNRfYDCVh7kV4CaFDLxtqRFA8re5AUD_A/viewform" target="_blank" rel="noopener" id="form-link">Go to the Application Form</a>
+  <span class="mail">The application form is in Japanese.</span>
+  <span class="mail">Contact us by e-mail: <a href="mailto:musokai.okinawa.branch@gmail.com">musokai.okinawa.branch@gmail.com</a></span>
+</div>
+
+<footer>
+  <div class="fbrand">International Okinawa Karate-do Muso-kai Okinawa Club</div>
+  <div>Okinawa branch of the International Okinawa Karate-do Muso-kai (President: Kiyoshi Arakaki)</div>
+  <div class="links">
+    <a href="https://ameblo.jp/muso-001/" target="_blank" rel="noopener">Founder's Blog</a>
+    <a href="https://muso-kai-seminar.jimdofree.com/" target="_blank" rel="noopener">Japan Seminar Tour</a>
+    <a href="https://www.instagram.com/musokai.okinawa/" target="_blank" rel="noopener">Instagram</a>
+    <a href="#links">All Links</a>
+    <a href="index.html">日本語</a>
+  </div>
+  <div>&copy; 2026 Muso-kai Okinawa. All Rights Reserved.</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    document.body.classList.toggle('menu-open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');}
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SportsOrganization",
+  "name":"International Okinawa Karate-do Muso-kai Okinawa Club",
+  "alternateName":"国際沖縄空手道無想会 沖縄同好会",
+  "url":"https://musokai-okinawa.github.io/en.html",
+  "email":"musokai.okinawa.branch@gmail.com",
+  "sport":"Karate",
+  "parentOrganization":{"@type":"SportsOrganization","name":"International Okinawa Karate-do Muso-kai"},
+  "sameAs":[
+    "https://www.instagram.com/musokai.okinawa/",
+    "https://www.tiktok.com/@musokai_okinawa",
+    "https://www.youtube.com/@musokai_okinawa",
+    "https://x.com/musokai_okinawa",
+    "https://ameblo.jp/muso-001/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Do I need any athletic experience?","acceptedAnswer":{"@type":"Answer","text":"No. Muso-kai training centers on learning body mechanics that do not rely on strength or explosive power, so people with no athletic background — or little confidence in their fitness — can start comfortably."}},
+    {"@type":"Question","name":"Is there an age limit?","acceptedAnswer":{"@type":"Answer","text":"We have an adult program only, open from junior-high age and up (there are no children's classes). Many members begin in their 40s or 50s, and there is no upper age limit."}},
+    {"@type":"Question","name":"I train in another style. Can I join?","acceptedAnswer":{"@type":"Answer","text":"You are very welcome. Practitioners of sport karate and other martial arts are often the most surprised by the answers to the question, \"Why does the kata move this way?\" You may also keep training in another style alongside Muso-kai."}},
+    {"@type":"Question","name":"Can I just observe?","acceptedAnswer":{"@type":"Answer","text":"Yes, observation is available (first visit only, ¥1,000). Please choose the observation option in the application form."}},
+    {"@type":"Question","name":"What should I bring to my first class?","acceptedAnswer":{"@type":"Answer","text":"Just comfortable clothes (your gi, if you have one) and a drink."}},
+    {"@type":"Question","name":"Are there tournaments?","acceptedAnswer":{"@type":"Answer","text":"Muso-kai holds no competitive matches. Through kata and body mechanics, we practice karate as a budo you can continue for life."}}
+  ]
+}
+</script>
+
+</body>
+</html>
