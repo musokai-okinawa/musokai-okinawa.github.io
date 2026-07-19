@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://musokai-okinawa.github.io/sitemap.xml
