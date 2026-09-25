@@ -169,6 +169,21 @@ header{position:sticky;top:0;z-index:100;background:rgba(247,243,236,.94);backdr
 .dojo dl{font-size:14.5px}
 .dojo dt{color:var(--gold);font-size:12px;letter-spacing:.16em;margin-top:14px;font-weight:700}
 .dojo dd{color:var(--ink-soft)}
+.sched{scroll-margin-top:90px;margin-top:28px;background:var(--card);border:1px solid var(--line);padding:30px 26px 24px;box-shadow:0 4px 18px rgba(38,34,29,.05)}
+.sched h3{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:20px;border-left:4px solid var(--red);padding-left:14px;margin-bottom:18px;font-weight:700}
+.sched-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 32px}
+@media(max-width:760px){.sched-grid{grid-template-columns:1fr}}
+.sched-month h4{font-family:"Shippori Mincho",serif;color:var(--ink);font-size:16px;font-weight:700;border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:2px}
+.sched-month ul{list-style:none;margin:0;padding:0}
+.sched-month li{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14.5px;color:var(--ink-soft)}
+.sched-date{color:var(--ink);font-weight:600;min-width:6.8em}
+.sched-time{font-variant-numeric:tabular-nums}
+.sched-tag{font-size:11.5px;color:var(--gold);border:1px solid var(--gold-soft);padding:0 8px;line-height:1.7}
+.sched-sem{color:var(--red);border-color:rgba(181,18,27,.45)}
+.sched-month li.past{opacity:.5}
+.sched-done{font-size:11.5px;color:var(--muted)}
+.sched-none{font-size:14px;color:var(--muted);padding:10px 0}
+.sched-note{font-size:12.5px;color:var(--muted);margin-top:14px}
 .map-link{display:inline-block;margin-top:16px;font-size:12.5px;color:var(--red);border-bottom:1px solid rgba(181,18,27,.4);padding-bottom:1px}
 .keiko-photos{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
 @media(max-width:760px){.keiko-photos{grid-template-columns:1fr}}
@@ -420,7 +435,7 @@ footer .links a:hover{color:var(--gold-soft)}
       <div class="dojo">
         <h3>那覇稽古会<span style="display:block;font-size:.62em;font-weight:normal;margin-top:.2em">会場：豊見城市</span></h3>
         <dl>
-          <dt>稽古日</dt><dd>毎週 土曜または日曜<br>（開始時間は日によって異なります。お申し込み時にご案内します）</dd>
+          <dt>稽古日</dt><dd>毎週 土曜または日曜<br>（開始時間は日によって異なります。下の<a href="#naha-schedule" style="color:var(--red)">稽古日程</a>をご覧ください）</dd>
           <dt>場所</dt><dd>沖縄空手会館　鍛錬室<br>（※県立武道館で開催する場合もあり）<br>（豊見城市豊見城８５４−１）</dd>
           <dt>月会費</dt><dd>5,000円</dd>
           <dt>責任者</dt><dd>又吉　初段（沖縄同好会代表）</dd>
@@ -447,6 +462,13 @@ footer .links a:hover{color:var(--gold-soft)}
         </dl>
         <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%AD%E9%87%8E%E3%81%A1%E3%82%85%E3%82%89%E3%82%86%E3%81%AA%E9%A4%A8" target="_blank" rel="noopener">地図を開く（Google マップ）</a>
       </div>
+    </div>
+    <div class="sched" id="naha-schedule">
+      <h3>那覇稽古会の稽古日程</h3>
+      <div class="sched-grid" id="nahaSchedule" data-lang="ja">
+        <noscript><p class="sched-none">日程はお申し込み時にご案内します。</p></noscript>
+      </div>
+      <p class="sched-note">※場所の記載がない日は、沖縄空手会館 鍛錬室です。<br>※日程・時間は変更になる場合があります。お申し込みの際にご確認ください。</p>
     </div>
     <div class="keiko-photos">
       <figure><img src="assets/keiko_setsumei.jpg" alt="セミナーでの技術解説の様子"><figcaption>新垣清会長によるセミナーでの技術解説。理論と実演をセットで学びます。※年2回実施</figcaption></figure>
@@ -603,6 +625,7 @@ footer .links a:hover{color:var(--gold-soft)}
   });
 })();
 </script>
+<script src="assets/naha-schedule.js"></script>
 
 <script type="application/ld+json">
 {
